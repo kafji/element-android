@@ -104,4 +104,7 @@ sealed class RoomDetailAction : VectorViewModelAction {
 
     // Preview URL
     data class DoNotShowPreviewUrlFor(val eventId: String, val url: String) : RoomDetailAction()
+
+    // Failed messages
+    object RemoveAllFailedMessages : RoomDetailAction()
 }
